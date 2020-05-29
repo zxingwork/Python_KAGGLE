@@ -45,3 +45,10 @@ print(vec.get_feature_names())
  [ 0.  0.  1. 18.]]
 ['city=Dubai', 'city=London', 'city=San Fransisco', 'temperature']
 ```
+对于文本数据：词袋法（Bag of Words）
+将每条文本在高维的词表（Vocabulary）上映射出一个特征向量。 常见计算方式有两种：```CountVectorizer```和```TfidfVectorizer```.
+
+|||
+|---|---|
+|```CountVectorizer```|考虑每种词汇（Term）在该条训练文本中出现的频率（Term Frequency）|
+|```TfidfVectorizer```|考虑每种词汇（Term）在该条训练文本中出现的频率（Term Frequency）;考虑InverseDocumentFrequency|
